@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./assets/fonts/Geist-Variable-wght.ttf") format("truetype");
+}
+
+@theme {
+    --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --animate-slide-down: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+    --animate-slide-up: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+
+    @keyframes slideDown {
+        from {
+            height: 0;
+        }
+        to {
+            height: var(--radix-accordion-content-height);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            height: var(--radix-accordion-content-height);
+        }
+        to {
+            height: 0;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-size: 100%;
+}
