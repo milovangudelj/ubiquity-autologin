@@ -62,8 +62,8 @@ function App() {
       <span className="block h-px bg-white/10"></span>
       <div className="flex flex-1 flex-col gap-2 overflow-x-hidden overflow-y-auto">
         <AutoSubmitSwitch />
-        <UNameInput />
         <DomainInput />
+        <UNameInput />
         <Accordion.Root type="single" collapsible>
           <Accordion.Item
             value="impostazioni-avanzate"
@@ -73,8 +73,8 @@ function App() {
               <span>Impostazioni avanzate</span>
             </AccordionTrigger>
             <AccordionContent>
-              <UNameSelectorInput />
               <DomainSelectorInput />
+              <UNameSelectorInput />
               <SubmitSelectorInput />
             </AccordionContent>
           </Accordion.Item>
